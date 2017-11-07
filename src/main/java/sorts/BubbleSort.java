@@ -1,6 +1,6 @@
 package sorts;
 
-import utils.Utilities;
+import utilities.Utils;
 
 /**
  * BubbleSort. Created on 07 Nov 2017 11:56:35 AM by siD.
@@ -21,7 +21,7 @@ public class BubbleSort {
     }
 
     public void run() {
-        int[] arr = Utilities.getRandomArrayOfInts(5);
+        int[] arr = Utils.getRandomArrayOfInts(5);
 
         System.out.println("Unsorted:");
         for (int i : arr) {

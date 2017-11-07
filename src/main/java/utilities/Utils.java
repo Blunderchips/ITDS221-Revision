@@ -1,18 +1,18 @@
-package utils;
+package utilities;
 
 import java.security.SecureRandom;
 import java.util.Random;
 
 /**
- * Utilities. Created on 07 Nov 2017 11:59:24 AM by siD.
+ * Utils. Created on 07 Nov 2017 11:59:24 AM by siD.
  *
  * @author Matthew Van der Bijl
  * @sinse 07 Nov 2017
  */
-public final class Utilities {
+public final class Utils {
 
     @Deprecated
-    private Utilities() {
+    private Utils() {
     }
 
     /**
