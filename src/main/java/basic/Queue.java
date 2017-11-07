@@ -28,7 +28,7 @@ public class Queue {
         System.out.println("");
 
         while (!q.isEmpty()) {
-            System.out.println("pop: " + q.dequeue());
+            System.out.println("Dequeue: " + q.dequeue());
         }
         System.out.println("\nIs full: " + q.isFull());
         System.out.println("Is empty: " + q.isEmpty());
