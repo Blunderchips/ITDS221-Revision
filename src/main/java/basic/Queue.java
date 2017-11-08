@@ -35,36 +35,36 @@ public class Queue {
     }
 
     private int size;
-    private int[] data;
+    private Object[] data;
 
     private int front;
     private int rear;
 
     public Queue(int size) {
         this.size = 0;
-        this.data = new int[size];
+        this.data = new Object[size];
 
         this.front = 0;
-        this.rear = -1;
+        this.rear = 0;
     }
 
     public int getSize() {
         return this.size;
     }
 
-    public void enqueue(int i) {
+    public void enqueue(Object i) {
         this.size++;
         this.front = (front + 1) % data.length;
         this.data[front] = i;
     }
 
-    public int dequeue() {
+    public Object dequeue() {
         this.size--;
         this.rear = (rear + 1) % data.length;
         return data[rear];
     }
 
-    public int peak() {
+    public Object peak() {
         return data[Math.max(rear, 0)];
     }
 
